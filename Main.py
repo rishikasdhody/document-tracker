@@ -4,6 +4,7 @@ from PyPDF2 import PdfFileWriter, PdfFileReader
 
 def main():
     output = PdfFileWriter()
+    #Add test file named old.pdf
     ipdf = PdfFileReader(open('old.pdf', 'rb'))
 
     for i in xrange(ipdf.getNumPages()):
